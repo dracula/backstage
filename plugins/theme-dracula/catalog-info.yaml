@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-theme-dracula
+  title: '@fjudith/plugin-theme-dracula'
+spec:
+  lifecycle: experimental
+  type: backstage-theme-dracula
+  owner: fjudith

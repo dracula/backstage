@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { makeStyles } from '@material-ui/core';
+import { Theme, makeStyles } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import ExtensionIcon from '@material-ui/icons/Extension';
 import MapIcon from '@material-ui/icons/MyLocation';
@@ -27,7 +27,9 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
-const useSidebarLogoStyles = makeStyles({
+import { appThemeApiRef, useApi } from '@backstage/core-plugin-api';
+
+const useSidebarLogoStyles = makeStyles<Theme, { themeId: string }>({
   root: {
     width: sidebarConfig.drawerWidthClosed,
     height: 3 * sidebarConfig.logoHeight,
@@ -40,16 +42,21 @@ const useSidebarLogoStyles = makeStyles({
     width: sidebarConfig.drawerWidthClosed,
     marginLeft: 24,
   },
+  path: props => ({
+    fill: props.themeId === 'dracula' ? '#F8F8F2' : '#7df3e1'
+  }),
 });
 
 const SidebarLogo = () => {
-  const classes = useSidebarLogoStyles();
+  const appThemeApi = useApi(appThemeApiRef);
+  const themeId = appThemeApi.getActiveThemeId();
+  const classes = useSidebarLogoStyles({ themeId: themeId! });
   const { isOpen } = useSidebarOpenState();
 
   return (
     <div className={classes.root}>
       <Link to="/" underline="none" className={classes.link} aria-label="Home">
-        {isOpen ? <LogoFull /> : <LogoIcon />}
+        {isOpen ? <LogoFull classes={classes}/> : <LogoIcon classes={classes}/>}
       </Link>
     </div>
   );

@@ -11,8 +11,12 @@ const useStyles = makeStyles({
   },
 });
 
-const LogoIcon = () => {
-  const classes = useStyles();
+const LogoIcon = (props: any | undefined) => {
+  const defaultClasses = useStyles();
+  const classes = {
+    ...defaultClasses,
+    ...props?.classes
+  }
 
   return (
     <svg

@@ -10,8 +10,12 @@ const useStyles = makeStyles({
     fill: '#7df3e1',
   },
 });
-const LogoFull = () => {
-  const classes = useStyles();
+const LogoFull = (props: any | undefined) => {
+  const defaultClasses = useStyles();
+  const classes = {
+    ...defaultClasses,
+    ...props?.classes
+  }
 
   return (
     <svg
