@@ -1,0 +1,1 @@
+export { draculaTheme } from './plugin';
