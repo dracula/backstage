@@ -12,7 +12,7 @@ Install this plugin:
 
 ```shell
 # From your Backstage root directory
-yarn --cwd packages/app add @fjudith/plugin-theme-dracula
+yarn --cwd packages/app add @fjudith/plugin-dracula-theme
 ```
 
 ## Theme installation
@@ -25,7 +25,7 @@ import { UnifiedThemeProvider, themes } from '@backstage/theme';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FlareIcon from '@material-ui/icons/Flare';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
-import { draculaTheme } from '@fjudith/plugin-theme-dracula';
+import { draculaTheme } from '@fjudith/plugin-dracula-theme';
 
 const app = createApp({
 ...

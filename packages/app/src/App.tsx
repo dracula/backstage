@@ -38,7 +38,7 @@ import { UnifiedThemeProvider, themes } from '@backstage/theme';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FlareIcon from '@material-ui/icons/Flare';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
-import { draculaTheme } from '@fjudith/plugin-theme-dracula';
+import { draculaTheme } from '@fjudith/plugin-dracula-theme';
 
 const app = createApp({
   apis,
