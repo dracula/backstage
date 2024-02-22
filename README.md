@@ -14,7 +14,7 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 
 | [![Florian JUDITH](https://github.com/fjudith.png?size=100)](https://github.com/fjudith) |
 | --- |
-| [Zeno Rocha](https://github.com/fjudith) |
+| [Florian JUDITH](https://github.com/fjudith) |
 
 ## Community
 
