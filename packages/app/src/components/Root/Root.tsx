@@ -43,7 +43,7 @@ const useSidebarLogoStyles = makeStyles<Theme, { themeId: string }>({
     marginLeft: 24,
   },
   path: props => ({
-    fill: props.themeId === 'dracula' ? '#F8F8F2' : '#7df3e1'
+    fill: props.themeId === 'dracula' ? '#F8F8F2' : '#7df3e1',
   }),
 });
 
@@ -56,7 +56,11 @@ const SidebarLogo = () => {
   return (
     <div className={classes.root}>
       <Link to="/" underline="none" className={classes.link} aria-label="Home">
-        {isOpen ? <LogoFull classes={classes}/> : <LogoIcon classes={classes}/>}
+        {isOpen ? (
+          <LogoFull classes={classes} />
+        ) : (
+          <LogoIcon classes={classes} />
+        )}
       </Link>
     </div>
   );

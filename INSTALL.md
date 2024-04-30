@@ -1,16 +1,16 @@
-### [Foobar](https://foobar.com)
+### [Backstage](https://backstage.io)
 
 #### Install using Git
 
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
 
 ```bash
-git clone https://github.com/dracula/foobar.git
+git clone https://github.com/dracula/backstage.git
 ```
 
 #### Install manually
 
-Download using the [GitHub `.zip` download](https://github.com/dracula/foobar/archive/master.zip) option and unzip them.
+Download using the [GitHub `.zip` download](https://github.com/dracula/backstage/archive/main.zip) option and unzip them.
 
 #### Activating theme
 

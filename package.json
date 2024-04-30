@@ -6,23 +6,24 @@
     "node": "18 || 20"
   },
   "scripts": {
-    "dev": "concurrently \"yarn start\" \"yarn start-backend\"",
-    "start": "yarn workspace app start",
-    "start-backend": "yarn workspace backend start",
-    "build:backend": "yarn workspace backend build",
-    "build:all": "backstage-cli repo build --all",
     "build-image": "yarn workspace backend build-image",
-    "tsc": "tsc",
-    "tsc:full": "tsc --skipLibCheck false --incremental false",
+    "build:all": "backstage-cli repo build --all",
+    "build:backend": "yarn workspace backend build",
     "clean": "backstage-cli repo clean",
-    "test": "backstage-cli repo test",
+    "dev": "concurrently \"yarn start\" \"yarn start-backend\"",
+    "fix": "backstage-cli repo fix",
+    "lint:all": "backstage-cli repo lint",
+    "lint": "backstage-cli repo lint --since origin/master",
+    "new": "backstage-cli new --scope internal",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "start-backend": "yarn workspace backend start",
+    "start": "yarn workspace app start",
     "test:all": "backstage-cli repo test --coverage",
     "test:e2e": "playwright test",
-    "fix": "backstage-cli repo fix",
-    "lint": "backstage-cli repo lint --since origin/master",
-    "lint:all": "backstage-cli repo lint",
-    "prettier:check": "prettier --check .",
-    "new": "backstage-cli new --scope internal"
+    "test": "backstage-cli repo test",
+    "tsc:full": "tsc --skipLibCheck false --incremental false",
+    "tsc": "tsc"
   },
   "workspaces": {
     "packages": [

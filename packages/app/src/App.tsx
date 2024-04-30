@@ -64,7 +64,7 @@ const app = createApp({
       id: 'dracula',
       title: 'Dracula',
       variant: 'dark',
-      icon: <FlareIcon/>,
+      icon: <FlareIcon />,
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={draculaTheme} noCssBaseline>
           <CssBaseline />
@@ -76,7 +76,7 @@ const app = createApp({
       id: 'light',
       title: 'Light',
       variant: 'light',
-      icon: <FlareIcon/>,
+      icon: <FlareIcon />,
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={themes.light} children={children} />
       ),

@@ -14,8 +14,8 @@ const LogoFull = (props: any | undefined) => {
   const defaultClasses = useStyles();
   const classes = {
     ...defaultClasses,
-    ...props?.classes
-  }
+    ...props?.classes,
+  };
 
   return (
     <svg

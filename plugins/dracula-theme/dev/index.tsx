@@ -7,6 +7,6 @@ createDevApp()
   .addPage({
     element: <ThemeDraculaPage />,
     title: 'Root Page',
-    path: '/theme-dracula'
+    path: '/theme-dracula',
   })
   .render();

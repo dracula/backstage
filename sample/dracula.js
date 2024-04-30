@@ -20,8 +20,8 @@ class Vampire {
 
 // ...there was a guy named Vlad
 const Dracula = new Vampire({
-  location: "Transylvania",
+  location: 'Transylvania',
   birthDate: 1428,
   deathDate: 1476,
-  weaknesses: ["Sunlight", "Garlic"],
+  weaknesses: ['Sunlight', 'Garlic'],
 });

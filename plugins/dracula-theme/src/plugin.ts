@@ -1,1 +1,1 @@
-export {draculaTheme} from './themes/dracula';
+export { draculaTheme } from './themes/dracula';

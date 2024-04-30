@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,8 +24,8 @@
 
     <script>
       // ...there was a guy named Vlad
-      const form = document.querySelector("form");
-      form.addEventListener("submit", (e) => {
+      const form = document.querySelector('form');
+      form.addEventListener('submit', e => {
         const { birthDate, deathDate } = e.target;
         const age = deathDate.value - birthDate.value;
       });

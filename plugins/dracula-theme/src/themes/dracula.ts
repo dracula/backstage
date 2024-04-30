@@ -282,13 +282,13 @@ export const draculaTheme = createUnifiedTheme({
         contained: {
           boxShadow: 'none',
         },
-        containedPrimary: ({theme}) => ({
+        containedPrimary: ({ theme }) => ({
           backgroundColor: theme.palette.secondary.light,
           '&:hover': {
             backgroundColor: theme.palette.secondary.light,
           },
         }),
-        outlinedPrimary: ({theme}) => ({
+        outlinedPrimary: ({ theme }) => ({
           color: theme.palette.secondary.light,
           border: `1px solid ${theme.palette.secondary.light}`,
           '&:hover': {
@@ -391,7 +391,7 @@ export const draculaTheme = createUnifiedTheme({
     },
     MuiIconButton: {
       styleOverrides: {
-        colorPrimary: ({theme}) => ({
+        colorPrimary: ({ theme }) => ({
           color: theme.palette.secondary.light,
         }),
       },
