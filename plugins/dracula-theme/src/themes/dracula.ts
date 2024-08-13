@@ -82,6 +82,9 @@ export const draculaTheme = createUnifiedTheme({
         navItem: {
           hoverBackground: '#44475A',
         },
+        submenu: {
+          background: '#21222c',
+        }
       },
       text: {
         primary: '#F8F8F2',
@@ -127,7 +130,7 @@ export const draculaTheme = createUnifiedTheme({
     other: genPageTheme({
       colors: ['#282A36', '#282A36'],
       shape: shapes.wave,
-      options: { fontColor: '#44475A' },
+      options: { fontColor: '#a0aac8' },
     }),
     app: genPageTheme({
       colors: ['#282A36', '#282A36'],
